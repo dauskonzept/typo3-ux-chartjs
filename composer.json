@@ -1,0 +1,71 @@
+{
+	"name": "dskzpt/typo3-ux-chartjs",
+	"type": "typo3-cms-extension",
+	"description": "Easily build and render Chart.js charts in PHP and Fluid",
+	"homepage": "https://github.com/dauskonzept",
+	"keywords": [
+		"TYPO3",
+		"extension",
+		"stimulus-js",
+		"viewhelpers",
+		"chartjs"
+	],
+	"license": [
+		"GPL-2.0-or-later"
+	],
+	"authors": [
+		{
+			"name": "Sven Petersen",
+			"email": "sven@hardanders.de"
+		}
+	],
+	"require": {
+		"ssch/typo3-encore": "^5.0.5",
+		"symfony/ux-chartjs": "^2.16"
+	},
+	"require-dev": {
+		"ergebnis/composer-normalize": "^2.24",
+		"friendsoftypo3/phpstan-typo3": "^0.9.0",
+		"phpstan/extension-installer": "^1.2",
+		"typo3/coding-standards": "^0.6.1"
+	},
+	"autoload": {
+		"psr-4": {
+			"DSKZPT\\UX\\Chartjs\\": "Classes/"
+		}
+	},
+	"config": {
+		"allow-plugins": {
+			"typo3/class-alias-loader": true,
+			"typo3/cms-composer-installers": true,
+			"ergebnis/composer-normalize": true,
+			"phpstan/extension-installer": true
+		},
+		"preferred-install": {
+			"*": "dist"
+		},
+		"sort-packages": true,
+		"vendor-dir": ".Build/vendor",
+		"bin-dir": ".Build/vendor/bin"
+	},
+	"extra": {
+		"typo3/cms": {
+			"app-dir": ".Build",
+			"extension-key": "typo3_ux_chartjs",
+			"web-dir": ".Build/public"
+		}
+	},
+	"scripts": {
+		"ci:composer:normalize": "@composer normalize --dry-run",
+		"ci:php:cs-fixer": "php-cs-fixer fix -v --dry-run --using-cache no --diff",
+		"ci:php:lint": "find *.php Classes Configuration Tests -name '*.php' -print0 | xargs -0 -n 1 -P 4 php -l",
+		"ci:php:stan": "phpstan --no-progress",
+		"ci:test": [
+			"@ci:php:cs-fixer",
+			"@ci:php:stan"
+		],
+		"fix:php:cs-fixer": [
+			"php-cs-fixer fix -v --using-cache no"
+		]
+	}
+}
