@@ -55,7 +55,7 @@ Additionally:
 In any fluid template: Just register the Namespace and use the provided ViewHelper to render your chart:
 
     <html xmlns:ux="http://typo3.org/ns/DSKZPT/UX/Chartjs/ViewHelpers">
-        <ux:chart chart="{chart}" />
+        <ux:renderChart chart="{chart}" />
     </html>
 
 Please refer to the [symfony/ux-chartjs](https://ux.symfony.com/chartjs) docs for further information.
