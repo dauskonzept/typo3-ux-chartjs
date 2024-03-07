@@ -10,7 +10,7 @@ TYPO3 Extension "typo3-ux-chartjs"
 
 Easily build Chart.js in PHP and render them in Fluid templates.
 
-It acts as a wrapper for symfony/ux-chartjs package.
+It acts as a wrapper for [symfony/ux-chartjs](https://ux.symfony.com/chartjs) package.
 
 ## Installation
 
