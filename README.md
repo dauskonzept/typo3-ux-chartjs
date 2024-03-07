@@ -54,7 +54,7 @@ Additionally:
 ## Usage
 In any fluid template: Just register the Namespace and use the provided ViewHelper to render your chart:
 
-    <html xmlns:ux="http://typo3.org/ns/dskzpt/UX/Chartjs/ViewHelpers">
+    <html xmlns:ux="http://typo3.org/ns/DSKZPT/UX/Chartjs/ViewHelpers">
         <ux:chart chart="{chart}" />
     </html>
 
