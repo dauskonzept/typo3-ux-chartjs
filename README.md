@@ -1,11 +1,10 @@
-[![Latest Stable Version](http://poser.pugx.org/svenpetersen/typo3-ux-chartjs/v)](https://packagist.org/packages/svenpetersen/typo3-ux-chartjs)
-[![Total Downloads](http://poser.pugx.org/svenpetersen/typo3-ux-chartjs/downloads)](https://packagist.org/packages/svenpetersen/typo3-ux-chartjs)
-[![Monthly Downloads](http://poser.pugx.org/svenpetersen/typo3-ux-chartjs/d/monthly)](https://packagist.org/packages/svenpetersen/typo3-ux-vue)
-[![Latest Unstable Version](http://poser.pugx.org/svenpetersen/typo3-ux-chartjs/v/unstable)](https://packagist.org/packages/svenpetersen/typo3-ux-vue)
-[![License](http://poser.pugx.org/svenpetersen/typo3-ux-vue/license)](https://packagist.org/packages/svenpetersen/typo3-ux-vue)
-[![PHP Version Require](http://poser.pugx.org/svenpetersen/typo3-ux-vue/require/php)](https://packagist.org/packages/svenpetersen/typo3-ux-vue)
+[![Latest Stable Version](http://poser.pugx.org/dskzpt/typo3-ux-chartjs/v)](https://packagist.org/packages/dskzpt/typo3-ux-chartjs)
+[![Total Downloads](http://poser.pugx.org/dskzpt/typo3-ux-chartjs/downloads)](https://packagist.org/packages/dskzpt/typo3-ux-chartjs)
+[![Monthly Downloads](http://poser.pugx.org/dskzpt/typo3-ux-chartjs/d/monthly)](https://packagist.org/packages/dskzpt/typo3-ux-chartjs)
+[![Latest Unstable Version](http://poser.pugx.org/dskzpt/typo3-ux-chartjs/v/unstable)](https://packagist.org/packages/dskzpt/typo3-ux-chartjs)
+[![License](http://poser.pugx.org/dskzpt/typo3-ux-chartjs/license)](https://packagist.org/packages/dskzpt/typo3-ux-chartjs)
 
-TYPO3 Extension "typo3-ux-vue"
+TYPO3 Extension "typo3-ux-chartjs"
 =================================
 
 ## What does it do?
@@ -17,7 +16,7 @@ It acts as a wrapper for symfony/ux-chartjs package.
 The recommended way to install the extension is by
 using [Composer](https://getcomposer.org/). In your Composer based TYPO3 project
 root, just run:
-<pre>composer require svenpetersen/typo3-ux-chartjs</pre>
+<pre>composer require dskzpt/typo3-ux-chartjs</pre>
 
 ## Setup
 Before you start, make sure you have [EXT:typo3_encore](https://github.com/sabbelasichon/typo3_encore).
@@ -55,7 +54,7 @@ Additionally:
 ## Usage
 In any fluid template: Just register the Namespace and use the provided ViewHelper to render your chart:
 
-    <html xmlns:ux="http://typo3.org/ns/SvenPetersen/UX/Chartjs/ViewHelpers">
+    <html xmlns:ux="http://typo3.org/ns/dskzpt/UX/Chartjs/ViewHelpers">
         <ux:chart chart="{chart}" />
     </html>
 
